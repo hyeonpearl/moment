@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/quotes.js"></script>
+    <!-- <script defer src="js/background.js"></script> -->
+    <script defer src="js/todo.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/api.js"></script>
+    <script defer src="js/date.js"></script>
+    
+    <title>Memento App</title>
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-        <input 
-            required
-            maxlength="15"
-            type="text" 
-            placeholder="이름이 뭔가요?">
-        <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="오늘의 스케줄을 작성해주세요!" required>
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
+    <div class="hidden" id="main-screen">
+        <header id="main-header">
+            <div class="weather-box" id="weather">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="date-box">
+                <span id="calendar">00/00</span>
+                <span id="clock">00:00</span>
+            </div>
+        </header>
+        <main id="main-box">
+            <section class="user-box">
+                <h1 id="greeting"></h1>
+            </section>
+            <section class="todo-box">
+                <form id="todo-form">
+                    <h4>오늘의 스케줄을 작성해보세요.</h4>
+                    <input 
+                        type="text" 
+                        required
+                        placeholder="이 곳에 입력하세요."
+                    />
+                </form>
+                <ul id="todo-list"></ul>
+            </section>
+        </main>    
+        <footer>
+            <div class="quote-box">
+                <h4 id="quote-title">오늘의 명언</h4>
+                <div id="quote-line">
+                    <span></span>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
+    <div class="hidden" id="login-form">
+        <form>
+            <h4>당신의 이름은 무엇인가요?</h4>
+            <input 
+                required
+                maxlength="15"
+                type="text" >
+            <button>로그인</button>
+        </form>
     </div>
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/api.js"></script>
 </body>
 </html>
