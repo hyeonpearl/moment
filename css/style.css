@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 
 body {
-  background: url(/src/Lofi.gif);
+  background: url(../src/Lofi.gif);
   background-size: auto;
   color: white;
   font-family: 'DynaPuff', cursive;
