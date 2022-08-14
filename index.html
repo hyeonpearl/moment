@@ -7,14 +7,18 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <script
+      src="https://kit.fontawesome.com/bb430ea525.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/greeting.js"></script>
     <script defer src="js/clock.js"></script>
     <script defer src="js/quotes.js"></script>
-    <!-- <script defer src="js/background.js"></script> -->
     <script defer src="js/todo.js"></script>
     <script defer src="js/weather.js"></script>
     <script defer src="js/api.js"></script>
     <script defer src="js/date.js"></script>
+    <script defer src="js/music.js"></script>
 
     <title>Memento App</title>
   </head>
@@ -60,12 +64,19 @@
         </section>
       </main>
       <footer>
+        <button id="play-btn"><i class="fa-solid fa-play"></i></button>
+        <button class="hidden" id="pause-btn">
+          <i class="fa-solid fa-pause"></i>
+        </button>
         <div class="quote-box">
           <h4 id="quote-title">오늘의 명언</h4>
           <div id="quote-line">
             <span></span>
           </div>
         </div>
+        <button id="logout-btn">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
       </footer>
     </div>
   </body>

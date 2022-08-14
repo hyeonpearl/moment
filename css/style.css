@@ -1,10 +1,12 @@
 @import url('reset.css');
 @import url('variable.css');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 
 body {
-  background: url(/img/lofi1.gif);
+  background: url(/src/lofi1.gif);
   background-size: auto;
   color: white;
+  font-family: 'DynaPuff', cursive;
 }
 
 .hidden {
@@ -52,14 +54,6 @@ body {
 }
 
 #login-form button {
-  /*margin: 16px 0 0 0;
-  width: 80%;
-  height: 32px;
-  border: none;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  font-size: 20px;*/
   visibility: hidden;
 }
 
@@ -132,9 +126,19 @@ ul#todo-list {
   cursor: pointer;
 }
 
-#main-screen footer {
+footer {
   position: absolute;
   bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  column-gap: 16px;
+  width: 100%;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #quote-title {
@@ -142,4 +146,21 @@ ul#todo-list {
   padding: 1rem;
   font-size: 20px;
   font-weight: 700;
+}
+
+#logout-btn,
+#play-btn,
+#pause-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#logout-btn:hover,
+#play-btn:hover,
+#pause-btn:hover {
+  font-size: 30px;
+  transition: ease-in-out 2ms;
 }
