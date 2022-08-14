@@ -2,7 +2,7 @@ const playBtn = document.querySelector('#play-btn');
 const pauseBtn = document.querySelector('#pause-btn');
 
 const myAudio = new Audio();
-myAudio.src = '/src/Burbank - Sorry I Like You.mp3';
+myAudio.src = '/src/SorryILikeYou.mp3';
 myAudio.loop = true;
 
 function playMusic() {
