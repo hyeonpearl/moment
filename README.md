@@ -9,3 +9,5 @@
 - 날짜, 시간
 - 위치, 날씨 정보
 - 배경 음악
+
+https://nomadcoders.co/javascript-for-beginners
