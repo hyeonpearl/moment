@@ -10,4 +10,4 @@
 - 위치, 날씨 정보
 - 배경 음악
 
-https://nomadcoders.co/javascript-for-beginners
+[노마드코더 | Nomadcoder](https://nomadcoders.co/javascript-for-beginners)
