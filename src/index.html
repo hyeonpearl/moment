@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <script
       src="https://kit.fontawesome.com/bb430ea525.js"
@@ -20,7 +20,7 @@
     <script defer src="js/date.js"></script>
     <script defer src="js/music.js"></script>
 
-    <title>Memento App</title>
+    <title>Moment</title>
   </head>
   <body>
     <div class="hidden" id="main-screen">
@@ -29,11 +29,13 @@
           <span></span>
           <span></span>
         </div>
+
         <div class="date-box">
           <span id="calendar">00/00</span>
           <span id="clock">00:00</span>
         </div>
       </header>
+
       <main id="main-box">
         <section class="user-box">
           <div class="hidden" id="login-form">
@@ -43,37 +45,43 @@
                 required
                 maxlength="15"
                 type="text"
-                placeholder="Enter your name."
+                placeholder="여기에 작성해주세요."
               />
               <button></button>
             </form>
           </div>
+
           <h1 id="greeting"></h1>
         </section>
+
         <section class="todo-box">
           <form id="todo-form">
             <h4>오늘의 스케줄을 작성해보세요.</h4>
             <input
               type="text"
               required
-              placeholder="Enter your task."
+              placeholder="여기에 작성해주세요."
               maxlength="30"
             />
           </form>
+
           <ul id="todo-list"></ul>
         </section>
       </main>
+
       <footer>
         <button id="play-btn"><i class="fa-solid fa-play"></i></button>
         <button class="hidden" id="pause-btn">
           <i class="fa-solid fa-pause"></i>
         </button>
+
         <div class="quote-box">
           <h4 id="quote-title">오늘의 명언</h4>
           <div id="quote-line">
             <span></span>
           </div>
         </div>
+
         <button id="logout-btn">
           <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </button>

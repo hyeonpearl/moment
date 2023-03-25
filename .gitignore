@@ -1,2 +1,11 @@
 # DS STORE 삭제
 .DS_Store
+
+node_modules
+
+.cache
+dist
+
+src/js/api.js
+src/js/background.js
+src/js/music.js
