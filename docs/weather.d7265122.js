@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"AZzu":[function(require,module,exports) {
 "use strict";var t=require("./api");function e(e){var n=e.coords.latitude,a=e.coords.longitude,o=t.config.API_KEY,r="https://api.openweathermap.org/data/2.5/weather?lat=".concat(n,"&lon=").concat(a,"&appid=").concat(o,"&units=metric");fetch(r).then(function(t){return t.json()}).then(function(t){var e=document.querySelector("#weather span:first-child"),n=document.querySelector("#weather span:last-child");e.innerText="".concat(t.weather[0].main," / ").concat(~~t.main.temp," ℃"),n.innerText=t.name})}function n(){alert("위치 정보를 불러올 수 없습니다.")}navigator.geolocation.getCurrentPosition(e,n);
 },{"./api":"cZF8"}]},{},["AZzu"], null)
-//# sourceMappingURL=/resume/weather.d7265122.js.map
+//# sourceMappingURL=/moment/weather.d7265122.js.map
