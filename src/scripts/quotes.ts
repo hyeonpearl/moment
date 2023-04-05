@@ -1,4 +1,8 @@
-const quotes = [
+interface Quote {
+  quote: string;
+}
+
+const quotes: Quote[] = [
   {
     quote: '지나간 슬픔에 새 눈물을 낭비하지 마라.',
   },
@@ -25,9 +29,10 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector('#quote-line span');
+const quote = document.querySelector<HTMLSpanElement>('#quote-line span');
 
-// Math.ceil => 올림   Math.round => 반올림   Math.floor => 버림
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todayQuote.quote;
+if (quote instanceof HTMLSpanElement) {
+  quote.innerText = todayQuote.quote;
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts/api.ts"],"names":[],"mappings":";AAEE,aAAA,OAAA,eAAA,QAAA,aAAA,CAAA,OAAA,IAAA,QAAA,YAAA,EAFK,IAAM,EAA8B,CACzC,QAAS,oCACT,QAAA,OAAA","file":"api.e42c5049.js","sourceRoot":"../src","sourcesContent":["export const config: { API_KEY: string } = {\n  API_KEY: '7e8fded4f24bd691a10f19c5939702eb',\n};\n"]}

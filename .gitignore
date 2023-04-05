@@ -3,9 +3,7 @@
 
 node_modules
 
-.cache
 dist
+.cache
 
-src/js/api.js
-src/js/background.js
-src/js/music.js
+src/js
