@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn tsc; parcel src/index.html",
-    "build": "rm -rf docs; parcel build -d docs --public-url /moment src/index.html"
+    "build": "rm -rf docs; yarn tsc; parcel build -d docs --public-url /moment src/index.html"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
